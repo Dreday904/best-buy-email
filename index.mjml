@@ -1,0 +1,517 @@
+<mjml>
+  <mj-head>
+    <mj-style inline="inline">
+      @import url('https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script&family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,600&display=swap');
+
+      .best_buy_section {
+        position: relative;
+        top: 13px
+      }
+
+      .header_bottom {
+        font-family: 'Anton', sans-serif;
+        display: flex;
+        justify-content: center;
+        word-spacing: 20px;
+      }
+      
+
+      .best_buy_logo {
+        position: relative: top:-15px;
+      }
+
+      .social_icons {
+        position: relative;
+        top: -50px
+      }
+    </mj-style>
+
+  </mj-head>
+
+  <mj-body background-color="#f4f4f4">
+
+    <!-- HEADER TOP SECTION  -->
+    <mj-section background-color="#DBDADA" padding="0">
+      <mj-column>
+        <mj-text>
+          View: <font color="blue">Web</font color><br>
+        </mj-text>
+        <mj-text>
+          Jane D. | <font color="blue">View Account ></font color><br>
+          My <mark>Best</mark> <mark>Buy</mark>®
+        </mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-text align="right" font-weight="bold" padding="19px">
+          Ready in one hour<br>with store or Curbside<br>Pickup.*
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <!-- HEADER TOP SECTION END  -->
+
+
+    <!-- HEADER MIDDLE SECTION  -->
+    <mj-section background-color="#0A4ABF">
+      <mj-column>
+        <mj-image css-class="best_buy_section" width="150px" src="https://www.seekpng.com/png/full/271-2714116_new-best-buy-logo.png"></mj-image>
+        <mj-text color="white" font-weight="bold">
+          <p style="text-align:left; text-decoration:underline;">Top Deals > <span style="float:right; text-decoration:underline">Clearance > </span></p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <!-- HEADER MIDDLE SECTION END  -->
+
+
+
+    <!-- HEADER BOTTOM SECTION  -->
+    <mj-section background-color="#DBDADA" padding="10px">
+      <mj-column css-class="header_bottom">
+        <mj-text css-class="links" font-weight="bold" color="#0A4ABF" align="center">
+          TVs Computers CellPhones Appliances
+        </mj-text>
+
+      </mj-column>
+    </mj-section>
+    <!-- HEADER BOTTOM SECTION END  -->
+
+    <mj-section background-color="#ffffff" text-align="center">
+      <mj-column>
+        <mj-image padding-bottom="30px" align="center" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/MMT-593485-email-apple-watch-fb621795-d267-433c-9343-b10f9bf7c4cf.jpg" width="600px"></mj-image>
+        <mj-button width="100%" background-color="#FFED31" color="#1C252C" border-radius="10px">
+          Shop Now
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+
+    <mj-section background-color="#ffffff" padding-top="0" padding="0" text-align="center">
+      <mj-column>
+        <mj-image align="center" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/MMT-594944-airpods-now-email_der-2ee42425-a831-4d4a-b654-1d187537b57b.jpg"></mj-image>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#ffffff" text-align="center">
+      <mj-column>
+        <mj-image align="center" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/EVN-202893-applecare-email-v2-der-b5557294-17b0-43d8-a41d-2bd00a1f1d9f.jpg" width="600px"></mj-image>
+      </mj-column>
+    </mj-section>
+
+
+    <mj-section background-color="#ffffff" text-align="center">
+      <mj-column>
+        <mj-image align="center" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/MMT-510776_2022TopDeals-EMM-A-9b2f711f-e1c0-47fa-bbb9-451421ef3ea9.jpg" target="_blank" width="1200px"></mj-image>
+        <mj-button width="100%" background-color="#FFED31" color="#1C252C" border-radius="10px">
+          Shop Now
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+
+
+    <mj-wrapper>
+      <mj-section>
+        <mj-group>
+          <mj-column>
+            <mj-image padding="0" src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/COM_Computing2X_DER-155292.jpg">
+          </mj-column>
+          <mj-column>
+            <mj-image padding="0" src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/TV_TVs2x_DER-155288.jpg" />
+
+          </mj-column>
+        </mj-group>
+      </mj-section>
+    </mj-wrapper>
+
+    <mj-wrapper>
+      <mj-section>
+        <mj-group>
+          <mj-column>
+            <mj-image padding="0" src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/HA_Majors2X_DER-155289.jpg">
+          </mj-column>
+          <mj-column>
+            <mj-image padding="0" src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/CELL_CellPhones2X_DER-155286.jpg">
+          </mj-column>
+        </mj-group>
+      </mj-section>
+    </mj-wrapper>
+
+
+    <mj-wrapper>
+      <mj-section>
+        <mj-group>
+          <mj-column>
+            <mj-image padding="0" src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/HA_SmallKitchen2X_DER-155291.jpg">
+          </mj-column>
+          <mj-column>
+            <mj-image padding="0" src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/CAM_DSLRs2X_DER-155287.jpg">
+          </mj-column>
+        </mj-group>
+      </mj-section>
+    </mj-wrapper>
+
+
+    <mj-wrapper>
+      <mj-section>
+        <mj-group>
+          <mj-column>
+            <mj-image padding="0" src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/CH_SmartHome2Xnew_DER-183102.jpg">
+          </mj-column>
+          <mj-column>
+            <mj-image padding="0" src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/AUD_Headphonesnew2X_DER-201766.jpg">
+          </mj-column>
+        </mj-group>
+      </mj-section>
+    </mj-wrapper>
+
+
+
+    <mj-section background-color="#ffffff" text-align="center">
+      <mj-column>
+        <mj-image align="center" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/videogames_FY22EmailEvergreenQ3_PlayStationSoftware_10112021-MTC_DER-cefecb97-1619-4408-8edd-ecd334aae925.jpg" target="_blank" width="1200px"></mj-image>
+        <mj-text align="center" font-weight="bold">
+          Playstation Games
+        </mj-text>
+        <mj-button width="100%" background-color="#FFED31" color="#1C252C" border-radius="10px">
+          Shop Now
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+
+    <mj-section background-color="#ffffff" text-align="center">
+      <mj-column>
+        <mj-image align="center" src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/pol-MMT-401519_der-214794.jpg" target="_blank" width="1200px"></mj-image>
+        <mj-text align="center" font-weight="bold">
+          Pre-order the hottest upcoming video games.
+        </mj-text>
+        <mj-button width="100%" background-color="#FFED31" color="#1C252C" border-radius="10px">
+          Pre-Order
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+
+    <mj-section background-color="#ffffff" text-align="center">
+      <mj-column>
+        <mj-image align="center" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/TTINTEND_Membership_TILE_DER-a45e3b22-dedc-4a8b-8ddf-aa206c6a5b98.jpg" target="_blank" width="1200px"></mj-image>
+        <mj-text align="center" font-weight="bold">
+          Members get free delivery, mounting and setup<br> of any new TV.*
+        </mj-text>
+        <mj-text align="center">
+          Plus, get up to 24 months of product protection with<br> active membership.*
+        </mj-text>
+        <mj-button width="100%" background-color="#FFED31" color="#1C252C" border-radius="10px">
+          Learn More
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+
+    <mj-section background-color="#ffffff" text-align="center">
+      <mj-column>
+        <mj-image align="center" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol_6458906-top-rated-laptop-MMT-415124-x1220-42c092da-82fd-4015-bca0-6c689d0ad98c.jpg" target="_blank" width="1200px"></mj-image>
+        <mj-text align="center" font-weight="bold">
+          Top-rated laptops.
+        </mj-text>
+        <mj-button width="100%" background-color="#FFED31" color="#1C252C" border-radius="10px">
+          Shop Now
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+
+
+    <mj-section background-color="#ffffff" text-align="center">
+      <mj-column>
+        <mj-image align="center" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol-MMT-587316-220912_DER-9019b91e-9bdf-4c83-972e-de5ae177c65c.jpg" target="_blank" width="1200px"></mj-image>
+        <mj-text align="center" font-weight="bold">
+          Save up to $300 on the Samsung Galaxy S22 Series*
+        </mj-text>
+        <mj-text align="center">
+          with qualified activation. Or, save up to $200 instantly on an unlocked Galaxy S22 Series.
+        </mj-text>
+        <mj-button width="100%" background-color="#FFED31" color="#1C252C" border-radius="10px">
+          Shop Now
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+
+
+    <mj-section background-color="#ffffff" text-align="center">
+      <mj-column>
+        <mj-image align="center" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol-mmt507362-DER-88ebdcde-6dc3-45a0-9466-b826c49421ec.jpg" target="_blank" width="1200px"></mj-image>
+        <mj-text align="center" font-weight="bold">
+          Bluetooth and wireless speakers less than $100.
+        </mj-text>
+        <mj-button width="100%" background-color="#FFED31" color="#1C252C" border-radius="10px">
+          Shop Now
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+
+
+    <mj-section background-color="#ffffff" text-align="center">
+      <mj-column>
+        <mj-image align="center" src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/GL-37400-pol-dotd-190823_der-98962.png" target="_blank" width="1200px"></mj-image>
+        <mj-text align="center" font-weight="bold">
+          Great deals. Every day.
+        </mj-text>
+        <mj-button width="100%" background-color="#FFED31" color="#1C252C" border-radius="10px">
+          Pre-Order
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+
+
+    <mj-section background-color="#ffffff" text-align="center">
+      <mj-column>
+        <mj-image align="center" src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/GL-37504-pol-outlet-190823-98410.png" target="_blank" width="1200px"></mj-image>
+        <mj-text align="center" font-weight="bold">
+          Clearance, open-box and more.
+        </mj-text>
+        <mj-button width="100%" background-color="#FFED31" color="#1C252C" border-radius="10px">
+          Shop Now
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+
+
+    <mj-section background-color="#ffffff" text-align="center">
+      <mj-column>
+        <mj-image align="center" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol-MMT-582419-220829_DER-ba83c8f4-d688-4f2b-8d99-145cd6f057db.jpg" target="_blank" width="1200px"></mj-image>
+        <mj-text align="center" font-weight="bold">
+          Save up to $60 on select Canon printers.*
+        </mj-text>
+        <mj-button width="100%" background-color="#FFED31" color="#1C252C" border-radius="10px">
+          Shop Now
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+
+
+    <mj-section background-color="#ffffff" text-align="center">
+      <mj-column>
+        <mj-image align="center" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/MOBILEAPP_DEALS_ENGAGE_VPED2_Large_Image_DER-6a6dff43-44f3-4231-b62d-474d841dcea6.jpg" target="_blank" width="1200px"></mj-image>
+        <mj-button width="100%" background-color="#FFED31" color="#1C252C" border-radius="10px">
+          Learn More
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+
+    <mj-section background-color="#ffffff" text-align="center">
+      <mj-column>
+        <mj-image align="center" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-75264-phone-repair-bnr-3bca797d-3787-4c8c-b8a5-97bf7d0d0722.jpg" target="_blank" width="1200px"></mj-image>
+      </mj-column>
+    </mj-section>
+
+
+    <mj-section background-color="#ffffff">
+      <mj-column>
+        <mj-image align="center" src="https://d3ny89hlzoqbvb.cloudfront.net/7431/feed_1955702816_1184523502-05_28_00_45dc2c_77473.jpg" target="_blank" width="600px"></mj-image>
+      </mj-column>
+    </mj-section>
+
+
+
+    <mj-wrapper>
+      <mj-section background-color="#ffffff">
+        <mj-group>
+          <mj-column>
+            <mj-image src="https://d3ny89hlzoqbvb.cloudfront.net/7431/feed_1275659400_1184523502-16_33_53_2d02f6_77396.jpg">
+          </mj-column>
+          <mj-column>
+            <mj-image src="https://d3ny89hlzoqbvb.cloudfront.net/7431/feed_1275659400_1184523502-16_33_21_99abe4_21041.jpg">
+          </mj-column>
+        </mj-group>
+      </mj-section>
+    </mj-wrapper>
+
+
+    <mj-wrapper>
+      <mj-section background-color="#ffffff">
+        <mj-group>
+          <mj-column>
+            <mj-image src="https://d3ny89hlzoqbvb.cloudfront.net/7431/feed_1275659400_1184523502-16_44_07_b9801a_27806.jpg">
+          </mj-column>
+          <mj-column>
+            <mj-image src="https://d3ny89hlzoqbvb.cloudfront.net/7431/feed_1275659400_1184523502-18_28_34_71a6ae_52532.jpg">
+          </mj-column>
+        </mj-group>
+      </mj-section>
+    </mj-wrapper>
+
+    <mj-section background-color="#ffffff">
+      <mj-column>
+        <mj-text>
+          <hr>
+        </mj-text>
+        <mj-text align="center" color="#0A4ABF" font-weight="bold" font-size="15px">
+          TVs
+        </mj-text>
+        <mj-text>
+          <hr>
+        </mj-text>
+        <mj-text align="center" color="#0A4ABF" font-weight="bold" font-size="15px">
+          Computers
+        </mj-text>
+        <mj-text>
+          <hr>
+        </mj-text>
+        <mj-text align="center" color="#0A4ABF" font-weight="bold" font-size="15px">
+          Cell Phones
+        </mj-text>
+        <mj-text>
+          <hr>
+        </mj-text>
+        <mj-text align="center" color="#0A4ABF" font-weight="bold" font-size="15px">
+          Appliances
+        </mj-text>
+        <mj-text>
+          <hr>
+        </mj-text>
+        <mj-text align="center" color="#0A4ABF" font-weight="bold" font-size="15px">
+          Small Appliances
+        </mj-text>
+        <mj-text>
+          <hr>
+        </mj-text>
+        <mj-text align="center" color="#0A4ABF" font-weight="bold" font-size="15px">
+          Smart Home
+        </mj-text>
+        </mj-coulumn>
+    </mj-section>
+
+    <mj-section background-color="#0A4ABF" padding="10px" padding-bottom="30px">
+      <mj-column css-class="best_buy_section">
+        <mj-text color="white" font-weight="bold">
+          <p style="text-align:;">Deal of the Day <span style="float:right;">Mobile app</span></p>
+        </mj-text>
+        <mj-text>
+          <hr>
+        </mj-text>
+        <mj-text color="white" font-weight="bold">
+          <p style="text-align:;">Credit Cards <span style="float:right;">Support Center</span></p>
+        </mj-text>
+        <mj-text>
+          <hr>
+        </mj-text>
+        <mj-text color="white" font-weight="bold" align="center">
+          <p style=>Follow us and share your story </p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#0A4ABF">
+      <mj-group>
+        <mj-column css-class="social_icons">
+          <mj-image width="30px" src="http://image.emailinfo2.bestbuy.com/lib/fef31d77766c05/m/6/icon-social-fb.gif"></mj-image>
+        </mj-column>
+        <mj-column css-class="social_icons">
+          <mj-image width="30px" src="http://image.emailinfo2.bestbuy.com/lib/fef31d77766c05/m/6/icon-social-tw.gif"></mj-image>
+        </mj-column>
+        <mj-column css-class="social_icons">
+          <mj-image width="30px" src="http://image.emailinfo2.bestbuy.com/lib/fef31d77766c05/m/6/icon-social-ig.gif"></mj-image>
+        </mj-column>
+        <mj-column css-class="social_icons">
+          <mj-image width="30px" src="http://image.emailinfo2.bestbuy.com/lib/fef31d77766c05/m/6/icon-social-pi.gif"></mj-image>
+        </mj-column>
+        <mj-column css-class="social_icons">
+          <mj-image width="30px" src="http://image.emailinfo2.bestbuy.com/lib/fef31d77766c05/m/6/icon-social-in.gif"></mj-image>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+
+
+    <mj-section background-color="#ffffff">
+      <mj-column>
+        <mj-image align="center" src="https://drgfpqxf0lj8j.cloudfront.net/7431/map-id-542471016-v-1140623774-s-46dbec18d025.jpg" target="_blank" width="600px"></mj-image>
+      </mj-column>
+    </mj-section>
+
+
+    <mj-section background-color="#ffffff">
+      <mj-column>
+        <mj-image align="center" src="https://drgfpqxf0lj8j.cloudfront.net/7431/map-id-542469120-v-2044321494-s-201b21a486a1.jpg" target="_blank" width="600px"></mj-image>
+      </mj-column>
+    </mj-section>
+
+
+    <mj-section background-color="#ffffff">
+      <mj-column>
+        <mj-text>
+          Test
+          <mj-text>
+      </mj-column>
+    </mj-section>
+
+
+    <mj-section background-color="#DBDADA">
+      <mj-column>
+        <mj-text color="black">
+          <p>Your privacy is important to Best Buy. For more information on how Best Buy protects your privacy, steps you can take to protect your personal information and alerts on privacy risks facing consumers, please visit the <span style="text-decoration:underline;">Best Buy Privacy Hub.</span></p>
+        </mj-text>
+        <mj-text color="black">
+          <p><span style="font-weight:bold;">STORE OR CURBSIDE PICKUP:</span>
+            *See BestBuy.com/StorePickup for details.</p>
+        </mj-text>
+        <mj-text color="black">
+          <p><span style="font-weight:bold;">APPLECARE+:</span>
+            AppleCare+ will be added to eligible Apple purchases from Best Buy at no additional charge. Service fees and claims limits apply. The complete terms and conditions for AppleCare+ can be found at BestBuy.com/PlanTerms under the “Protection” category. The company obligated under AppleCare+ in the United States is AppleCare Service Company, Inc., an Arizona corporation and wholly owned subsidiary of Apple Inc., doing business in Texas as Apple CSC Inc. </p>
+        </mj-text>
+        <mj-text color="black">
+          <p><span style="font-weight:bold;">DELIVERY OFFER:</span>
+            *Terms, conditions and limitations apply. Must be ordered as part of the same qualifying purchase transaction. Parts, accessories, and permits are excluded from this benefit. See Total tech <span style="text-decoration:underline;">Terms and Conditions</span> for additional details. </p>
+        </mj-text>
+        <mj-text color="black">
+          <p><span style="font-weight:bold;">BEST BUY TOTALTECH™ MEMBER OFFER:</span>
+            *Available on most new Best Buy purchases. Terms, conditions and limitations apply. Subject to service fees and claim limits. Visit <span style="text-decoration:underline;">BestBuy.com/Plan Terms</span> for more details. </p>
+        </mj-text>
+        <mj-text color="black">
+          <p><span style="font-weight:bold;">SAVE UP TO $350 ON SAMSUNG GALAXY S22 SERIES OFFER:</span>
+            *Terms and conditions apply. </p>
+        </mj-text>
+        <mj-text color="black">
+          <p><span style="font-weight:bold;">SCANON SAVINGS:</span>
+            *Minimum savings is $30. </p>
+        </mj-text>
+        <mj-text color="black">
+          <p><span style="font-weight:bold;">SAVE UP TO $350 ON SAMSUNG GALAXY S22 SERIES OFFER:</span>
+            *Terms and conditions apply. </p>
+        </mj-text>
+        <mj-text color="black">
+          <p><span style="font-weight:bold;">AUTHORIZED APPLE AND SAMSUNG PHONE REPAIR:</span>
+            *We will price match Apple and Samsung service and repair costs of any Apple Authorized Service Provider and Samsung Authorized Service Center. Limitations apply. Valid on select Apple and Samsung models and in select stores for Samsung. Reservation required. Most repairs will be completed same-day if all necessary parts are in stock and the device is not extensively damaged. Certain repairs may require a longer mail-in exchange. </p>
+        </mj-text>
+        <mj-text color="black">
+          <p><span style="font-weight:bold;">
+              BEST BUY TOTALTECH™:</span>
+            *Some limitations apply on delivery, installation, shipping, extended returns and other benefits. Product protection benefit covers most new products purchased at Best Buy while the membership is active and is subject to service fees and claim limits. Active membership is required to keep product protection benefit for up to 24 months. Terms, conditions and exclusions apply. Details at <span style="text-decoration:underline;">BestBuy.com/Totaltech.</span>
+          </p>
+        </mj-text>
+        <mj-text color="black">
+          <p><span style="font-weight:bold;">
+              BEST BUY OFFER TERMS: </span>
+            Savings offers are based on markdowns from a regular price or a Was price and, unless otherwise noted, exclude special order, clearance, open-box, refurbished, and pre-owned items. Prices are subject to change and represent BestBuy.com® pricing; in-store pricing and availability may vary. Products included in bundle/package/free-with-purchase offers must be purchased in the same transaction to receive the benefit. Offers may include instant savings on individual items. For buy one, get one offers, discounted or free item(s) must be of equal or lesser value. Best Buy® gift cards have no expiration date or fees, and are good toward future purchase.
+          </p>
+        </mj-text>
+        <mj-text color="black">
+          <p>This email is a Best Buy advertisement. If you no longer wish to receive our marketing emails, <span style="text-decoration:underline; color:blue">unsubscribe here.</span> If you have difficulty with the unsubscribe link, you may also send an email to PrivacyManager@bestbuy.com. For more information, read our <span style="text-decoration:underline;">Privacy Policy</span> or call 1-888-BEST BUY.
+          </p>
+        </mj-text>
+        <mj-text color="black">
+          <p>Best Buy 7601 Penn Avenue South, Richfield, MN 55423-3645
+          </p>
+        </mj-text>
+        <mj-text color="black">
+          <p>© 2022 Best Buy. All rights reserved.
+          </p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
