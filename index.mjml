@@ -2,40 +2,35 @@
   <mj-head>
     <mj-style inline="inline">
       @import url('https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script&family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,600&display=swap');
+    
 
-      .best_buy_section {
-        display: flex;
-        align-items: center;
-        position: relative;
-        top: -20px;
-      }
+     
+       .underline{
+        border-bottom: 1px solid  #32a1ce;
+       }
+       .underline2{
+        border-bottom: 1px solid white;
+       }
+       .clickable{
+        cursor:pointer;
+       }
+       
 
-      .clearance span {
-        float: right;
-        padding: 10px
-      }
-
-      .header_bottom {
-        font-family: 'Anton', sans-serif;
-        display: flex;
-        justify-content: center;
-        word-spacing: 20px;
-      }
-
-
-      .best_buy_logo {
-        position: relative: top:-15px;
-      }
-
-      .social_icons {
-        position: relative;
-        top: -50px
-      }
     </mj-style>
 
+    <mj-attributes>
+      <mj-class name="nav-text" color="white" />
+      <mj-class name="blue-color" color="#0046BE" />
+      <mj-class name="bold" font-weight="bold" />
+      <mj-class name="nav-text-bottom" color="white" style="" />
+      <mj-class name="deal" />
+    </mj-attributes>
+    <mj-raw>
+    <script src="https://kit.fontawesome.com/34af4a64a9.js" crossorigin="anonymous"></script>
+    </mj-raw>
   </mj-head>
 
-  <mj-body background-color="#f4f4f4">
+  <mj-body background-color="#e2e2e2">
 
     <!-- HEADER TOP SECTION  -->
     <mj-section background-color="#DBDADA" padding="0">
@@ -49,21 +44,29 @@
         </mj-text>
       </mj-column>
       <mj-column>
-        <mj-text align="right" font-weight="bold" padding="19px">
+        <mj-text font-weight="bold" padding="19px">
           Ready in one hour<br>with store or Curbside<br>Pickup.*
         </mj-text>
       </mj-column>
+
     </mj-section>
     <!-- HEADER TOP SECTION END  -->
 
 
     <!-- HEADER MIDDLE SECTION  -->
-    <mj-section background-color="#0046BE">
+    <mj-section padding-top="5px" padding-bottom="5px" background-color="#0046BE">
       <mj-column>
-        <mj-text css-class="clearance" css-class="top_deals" color="white" font-weight="bold">
-          <p><span css-class="top_deals" style="position:relative; top:60px; font-size:15px">Top Deals ></span><span style="position:relative; top:60px; font-size:15px">Clearance ></span></p>
-        </mj-text>
-        <mj-image css-class="best_buy_section" width="150px" src="https://stores.bestbuy.com/permanent-b0b701/assets/images/logo.968d1f5f.png"></mj-image>
+        <mj-image width="90px" src="https://stores.bestbuy.com/permanent-b0b701/assets/images/logo.968d1f5f.png"></mj-image>
+      </mj-column>
+      <mj-column padding-top="10px">
+        <mj-navbar>
+          <mj-navbar-link href="#" mj-class="nav-text white-text bold">
+            Top Deals >
+          </mj-navbar-link>
+          <mj-navbar-link href="#" mj-class="nav-text white-text bold">
+            Clearance >
+          </mj-navbar-link>
+        </mj-navbar>
       </mj-column>
     </mj-section>
     <!-- HEADER MIDDLE SECTION END  -->
@@ -71,20 +74,30 @@
     <!-- HEADER BOTTOM SECTION  -->
     <mj-section background-color="#DBDADA" padding="10px">
       <mj-column css-class="header_bottom">
-        <mj-text css-class="links" font-weight="bold" color="#0A4ABF" align="center">
-          TVs Computers CellPhones Appliances
-        </mj-text>
-
+        <mj-navbar hamburger="hamburger" ico-color="#0046BE">
+          <mj-navbar-link href="#" mj-class="blue-color bold">
+            TVs
+          </mj-navbar-link>
+          <mj-navbar-link href="#" mj-class="blue-color bold">
+            Computers
+          </mj-navbar-link>
+          <mj-navbar-link href="#" mj-class="blue-color bold">
+            Cell Phones
+          </mj-navbar-link>
+          <mj-navbar-link href="#" mj-class="blue-color bold">
+            Appliances
+          </mj-navbar-link>
+        </mj-navbar>
       </mj-column>
     </mj-section>
     <!-- HEADER BOTTOM SECTION END  -->
 
     <!-- APPLE WATCH SECTION  -->
-    <mj-section background-color="#ffffff" text-align="center">
+    <mj-section padding-bottom="0px" padding-top="10px" background-color="#ffffff" text-align="center">
       <mj-column>
-        <mj-image padding-bottom="30px" align="center" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/MMT-593485-email-apple-watch-fb621795-d267-433c-9343-b10f9bf7c4cf.jpg" width="600px">
+        <mj-image padding="0px" align="center" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/MMT-593485-email-apple-watch-fb621795-d267-433c-9343-b10f9bf7c4cf.jpg">
         </mj-image>
-        <mj-button width="100%" background-color="#FFED31" color="#1C252C" border-radius="10px">
+        <mj-button padding="15px" background-color="#FFED31" color="#1C252C">
           <span style="font-weight:bold">Shop Now
         </mj-button>
       </mj-column>
@@ -92,372 +105,306 @@
     <!-- APPLE WATCH SECTION END -->
 
     <!-- AIRPODS SECTION  -->
-    <mj-section background-color="#ffffff" padding-top="0" padding="0" text-align="center">
+    <mj-section background-color="#ffffff" padding-top="0px" text-align="center">
       <mj-column>
-        <mj-image align="center" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/MMT-594944-airpods-now-email_der-2ee42425-a831-4d4a-b654-1d187537b57b.jpg"></mj-image>
-      </mj-column>
-    </mj-section>
-    <mj-section background-color="#ffffff" text-align="center">
-      <mj-column>
-        <mj-image align="center" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/EVN-202893-applecare-email-v2-der-b5557294-17b0-43d8-a41d-2bd00a1f1d9f.jpg" width="600px"></mj-image>
+        <mj-image padding="0" align="center" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/MMT-594944-airpods-now-email_der-2ee42425-a831-4d4a-b654-1d187537b57b.jpg"></mj-image>
       </mj-column>
     </mj-section>
     <!-- AIRPODS SECTION END -->
 
+    <!-- TOTAL TECH SECTION END -->
+    <mj-wrapper padding="0" padding-bottom="0px">
+      <mj-section padding-top="0px" padding-bottom="0px" background-color="#ffffff" text-align="center">
+        <mj-column>
+          <mj-image padding="0" align="center" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/EVN-202893-applecare-email-v2-der-b5557294-17b0-43d8-a41d-2bd00a1f1d9f.jpg"></mj-image>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+    <!-- TOTAL TECH SECTION END -->
+
     <!-- TOP DEALS SECTION  -->
-    <mj-section background-color="#ffffff" text-align="center">
-      <mj-column>
-        <mj-image align="center" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/MMT-510776_2022TopDeals-EMM-A-9b2f711f-e1c0-47fa-bbb9-451421ef3ea9.jpg" target="_blank" width="1200px"></mj-image>
-        <mj-button width="100%" background-color="#FFED31" color="#1C252C" border-radius="10px">
-          <span style="font-weight:bold">Shop Now
-        </mj-button>
-      </mj-column>
-    </mj-section>
+    <mj-wrapper padding="0">
+      <mj-section padding-bottom="0px" background-color="#ffffff" text-align="center">
+        <mj-column>
+          <mj-image padding="0px" align="center" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/MMT-510776_2022TopDeals-EMM-A-9b2f711f-e1c0-47fa-bbb9-451421ef3ea9.jpg"></mj-image>
+        </mj-column>
+      </mj-section>
+      <mj-section background-color="#0A4ABF">
+        <mj-column>
+          <mj-button background-color="#FFED31" color="#1C252C">
+            <span style="font-weight:bold">Shop Now
+          </mj-button>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
     <!-- TOP DEALS SECTION END  -->
 
     <!-- COMPUTER & TV SECTION  -->
-    <mj-wrapper>
-      <mj-section>
-        <mj-group>
-          <mj-column>
-            <mj-image padding="0" src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/COM_Computing2X_DER-155292.jpg">
-          </mj-column>
-          <mj-column>
-            <mj-image padding="0" src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/TV_TVs2x_DER-155288.jpg" />
-          </mj-column>
-        </mj-group>
-      </mj-section>
-    </mj-wrapper>
+    <mj-section background-color="#ffffff">
+      <mj-group>
+        <mj-column>
+          <mj-image padding="0" src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/COM_Computing2X_DER-155292.jpg">
+        </mj-column>
+        <mj-column>
+          <mj-image padding="0" src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/TV_TVs2x_DER-155288.jpg" />
+        </mj-column>
+      </mj-group>
+      <mj-group>
+        <mj-column>
+          <mj-image padding="0" src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/HA_Majors2X_DER-155289.jpg">
+        </mj-column>
+        <mj-column>
+          <mj-image padding="0" src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/CELL_CellPhones2X_DER-155286.jpg">
+        </mj-column>
+      </mj-group>
+    </mj-section>
     <!-- COMPUTER & TV SECTION END -->
 
-    <!-- FRIDGE & PHONE SECTION  -->
-    <mj-wrapper>
-      <mj-section>
-        <mj-group>
-          <mj-column>
-            <mj-image padding="0" src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/HA_Majors2X_DER-155289.jpg">
-          </mj-column>
-          <mj-column>
-            <mj-image padding="0" src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/CELL_CellPhones2X_DER-155286.jpg">
-          </mj-column>
-        </mj-group>
-      </mj-section>
-    </mj-wrapper>
-    <!-- FRIDGE & PHONE SECTION END -->
-
     <!-- BLENDER & CAMERA SECTION  -->
-    <mj-wrapper>
-      <mj-section>
-        <mj-group>
-          <mj-column>
-            <mj-image padding="0" src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/HA_SmallKitchen2X_DER-155291.jpg">
-          </mj-column>
-          <mj-column>
-            <mj-image padding="0" src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/CAM_DSLRs2X_DER-155287.jpg">
-          </mj-column>
-        </mj-group>
-      </mj-section>
-    </mj-wrapper>
+    <mj-section background-color="#ffffff">
+      <mj-group>
+        <mj-column>
+          <mj-image padding="0" src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/HA_SmallKitchen2X_DER-155291.jpg">
+        </mj-column>
+        <mj-column>
+          <mj-image padding="0" src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/CAM_DSLRs2X_DER-155287.jpg">
+        </mj-column>
+      </mj-group>
+      <mj-group>
+        <mj-column>
+          <mj-image padding="0" src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/CH_SmartHome2Xnew_DER-183102.jpg">
+        </mj-column>
+        <mj-column>
+          <mj-image padding="0" src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/AUD_Headphonesnew2X_DER-201766.jpg">
+        </mj-column>
+      </mj-group>
+    </mj-section>
     <!-- BLENDER & CAMERA SECTION END -->
-
-    <!-- SECURITY CAM & EARBUDS SECTION  -->
-    <mj-wrapper>
-      <mj-section>
-        <mj-group>
-          <mj-column>
-            <mj-image padding="0" src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/CH_SmartHome2Xnew_DER-183102.jpg">
-          </mj-column>
-          <mj-column>
-            <mj-image padding="0" src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/AUD_Headphonesnew2X_DER-201766.jpg">
-          </mj-column>
-        </mj-group>
-      </mj-section>
-    </mj-wrapper>
-    <!-- SECURITY CAM & EARBUDS END SECTION  -->
 
     <!-- PLAYSTATION GAMES SECTION  -->
     <mj-section background-color="#ffffff" text-align="center">
-      <mj-column>
-        <mj-image align="center" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/videogames_FY22EmailEvergreenQ3_PlayStationSoftware_10112021-MTC_DER-cefecb97-1619-4408-8edd-ecd334aae925.jpg" target="_blank" width="1200px"></mj-image>
-        <mj-text align="center" font-weight="bold">
-          Playstation Games
-        </mj-text>
-        <mj-button width="100%" background-color="#FFED31" color="#1C252C" border-radius="10px">
-          <span style="font-weight:bold">Shop Now
-        </mj-button>
-      </mj-column>
+      <mj-group>
+        <mj-column>
+          <mj-image align="center" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/videogames_FY22EmailEvergreenQ3_PlayStationSoftware_10112021-MTC_DER-cefecb97-1619-4408-8edd-ecd334aae925.jpg" target="_blank" width="1200px"></mj-image>
+          <mj-text align="center" font-weight="bold">
+            Playstation Games
+          </mj-text>
+          <mj-button background-color="#FFED31" color="#1C252C">
+            <span style="font-weight:bold">Shop Now
+          </mj-button>
+        </mj-column>
+      </mj-group>
+      <mj-group>
+        <mj-column>
+          <mj-image align="center" src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/pol-MMT-401519_der-214794.jpg" target="_blank" width="1200px"></mj-image>
+          <mj-text align="center" font-weight="bold">
+            Pre-order the hottest upcoming video games.
+          </mj-text>
+          <mj-button background-color="#FFED31" color="#1C252C">
+            <span style="font-weight:bold">Pre-Order
+          </mj-button>
+        </mj-column>
+      </mj-group>
     </mj-section>
     <!-- PLAYSTATION GAMES SECTION END -->
 
-    <!-- CONTROLLER SECTION  -->
-    <mj-section background-color="#ffffff" text-align="center">
-      <mj-column>
-        <mj-image align="center" src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/pol-MMT-401519_der-214794.jpg" target="_blank" width="1200px"></mj-image>
-        <mj-text align="center" font-weight="bold">
-          Pre-order the hottest upcoming video games.
-        </mj-text>
-        <mj-button width="100%" background-color="#FFED31" color="#1C252C" border-radius="10px">
-          <span style="font-weight:bold">Pre-Order
-        </mj-button>
-      </mj-column>
-    </mj-section>
-    <!-- CONTROLLER SECTION END -->
 
     <!-- BESTBUY TECH SECTION  -->
     <mj-section background-color="#ffffff" text-align="center">
-      <mj-column>
-        <mj-image align="center" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/TTINTEND_Membership_TILE_DER-a45e3b22-dedc-4a8b-8ddf-aa206c6a5b98.jpg" target="_blank" width="1200px"></mj-image>
-        <mj-text align="center" font-weight="bold">
-          Members get free delivery, mounting and setup<br> of any new TV.*
-        </mj-text>
-        <mj-text align="center">
-          Plus, get up to 24 months of product protection with<br> active membership.*
-        </mj-text>
-        <mj-button width="100%" background-color="#FFED31" color="#1C252C" border-radius="10px">
-          <span style="font-weight:bold">Learn More
-        </mj-button>
-      </mj-column>
+      <mj-group>
+        <mj-column>
+          <mj-image align="center" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/TTINTEND_Membership_TILE_DER-a45e3b22-dedc-4a8b-8ddf-aa206c6a5b98.jpg" target="_blank" width="1200px"></mj-image>
+          <mj-text align="center" font-weight="bold">
+            Members get free delivery, mounting and setup<br> of any new TV.*
+          </mj-text>
+          <mj-text align="center">
+            Plus, get up to 24 months of product protection with<br> active membership.*
+          </mj-text>
+          <mj-button background-color="#FFED31" color="#1C252C">
+            <span style="font-weight:bold">Learn More
+          </mj-button>
+        </mj-column>
+      </mj-group>
+      <mj-group>
+        <mj-column>
+          <mj-image align="center" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol-mmt589979-lg_DER-f60bf1bf-0d16-415f-94d6-f561fa70d4f2.jpg" target="_blank" width="1200px"></mj-image>
+          <mj-text align="center" font-weight="bold">
+            Top-rated laptops.
+          </mj-text>
+          <mj-button background-color="#FFED31" color="#1C252C">
+            <span style="font-weight:bold"><span style="font-weight:bold">Shop Now
+          </mj-button>
+        </mj-column>
+      </mj-group>
     </mj-section>
     <!-- BESTBUY TECH SECTION END -->
 
     <!-- LAPTOP SECTION  -->
-    <mj-section background-color="#ffffff" text-align="center">
-      <mj-column>
-        <mj-image align="center" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol_6458906-top-rated-laptop-MMT-415124-x1220-42c092da-82fd-4015-bca0-6c689d0ad98c.jpg" target="_blank" width="1200px"></mj-image>
-        <mj-text align="center" font-weight="bold">
-          Top-rated laptops.
-        </mj-text>
-        <mj-button width="100%" background-color="#FFED31" color="#1C252C" border-radius="10px">
-          <span style="font-weight:bold"><span style="font-weight:bold">Shop Now
-        </mj-button>
-      </mj-column>
-    </mj-section>
+    <mj-wrapper padding="0">
+      <mj-section background-color="#ffffff" text-align="center">
+        <mj-group>
+          <mj-column>
+            <mj-image align="center" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol_6458906-top-rated-laptop-MMT-415124-x1220-42c092da-82fd-4015-bca0-6c689d0ad98c.jpg" target="_blank" width="1200px"></mj-image>
+            <mj-text align="center" font-weight="bold">
+              Top-rated laptops.
+            </mj-text>
+            <mj-button background-color="#FFED31" color="#1C252C">
+              <span style="font-weight:bold"><span style="font-weight:bold">Shop Now
+            </mj-button>
+          </mj-column>
+        </mj-group>
+        <mj-group>
+          <mj-column>
+            <mj-image align="center" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol-MMT-587316-220912_DER-9019b91e-9bdf-4c83-972e-de5ae177c65c.jpg" target="_blank" width="1200px"></mj-image>
+            <mj-text align="center" font-weight="bold">
+              Save up to $300 on the Samsung Galaxy S22 Series*
+            </mj-text>
+            <mj-text align="center">
+              with qualified activation. Or, save up to $200 instantly on an unlocked Galaxy S22 Series.
+            </mj-text>
+            <mj-button background-color="#FFED31" color="#1C252C">
+              <span style="font-weight:bold">Shop Now
+            </mj-button>
+          </mj-column>
+        </mj-group>
+      </mj-section>
+    </mj-wrapper>
     <!-- LAPTOP SECTION END -->
 
-    <!-- PHONES SECTION  -->
-    <mj-section background-color="#ffffff" text-align="center">
-      <mj-column>
-        <mj-image align="center" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol-MMT-587316-220912_DER-9019b91e-9bdf-4c83-972e-de5ae177c65c.jpg" target="_blank" width="1200px"></mj-image>
-        <mj-text align="center" font-weight="bold">
-          Save up to $300 on the Samsung Galaxy S22 Series*
-        </mj-text>
-        <mj-text align="center">
-          with qualified activation. Or, save up to $200 instantly on an unlocked Galaxy S22 Series.
-        </mj-text>
-        <mj-button width="100%" background-color="#FFED31" color="#1C252C" border-radius="10px">
-          <span style="font-weight:bold">Shop Now
-        </mj-button>
-      </mj-column>
-    </mj-section>
-    <!-- PHONES SECTION END -->
-
     <!-- BLUETOOTH SPEAKER SECTION  -->
-    <mj-section background-color="#ffffff" text-align="center">
-      <mj-column>
-        <mj-image align="center" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol-mmt507362-DER-88ebdcde-6dc3-45a0-9466-b826c49421ec.jpg" target="_blank" width="1200px"></mj-image>
-        <mj-text align="center" font-weight="bold">
-          Bluetooth and wireless speakers less than $100.
-        </mj-text>
-        <mj-button width="100%" background-color="#FFED31" color="#1C252C" border-radius="10px">
-          <span style="font-weight:bold">Shop Now
-        </mj-button>
-      </mj-column>
-    </mj-section>
+    <mj-wrapper padding="0">
+      <mj-section background-color="#ffffff" text-align="center">
+        <mj-group>
+          <mj-column>
+            <mj-image align="center" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol-mmt507362-DER-88ebdcde-6dc3-45a0-9466-b826c49421ec.jpg" target="_blank" width="1200px"></mj-image>
+            <mj-text align="center" font-weight="bold">
+              Bluetooth and wireless speakers less than $100.
+            </mj-text>
+            <mj-button background-color="#FFED31" color="#1C252C">
+              <span style="font-weight:bold">Shop Now
+            </mj-button>
+          </mj-column>
+        </mj-group>
+        <mj-group>
+          <mj-column>
+            <mj-image align="center" src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/GL-37400-pol-dotd-190823_der-98962.png" target="_blank" width="1200px"></mj-image>
+            <mj-text align="center" font-weight="bold">
+              Great deals. Every day.
+            </mj-text>
+            <mj-button background-color="#FFED31" color="#1C252C">
+              <span style="font-weight:bold">Pre-Order
+            </mj-button>
+          </mj-column>
+        </mj-group>
+      </mj-section>
+    </mj-wrapper>
     <!-- BLUETOOTH SPEAKER SECTION END -->
-
-    <!-- DEAL OF THE DAY SECTION  -->
-    <mj-section background-color="#ffffff" text-align="center">
-      <mj-column>
-        <mj-image align="center" src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/GL-37400-pol-dotd-190823_der-98962.png" target="_blank" width="1200px"></mj-image>
-        <mj-text align="center" font-weight="bold">
-          Great deals. Every day.
-        </mj-text>
-        <mj-button width="100%" background-color="#FFED31" color="#1C252C" border-radius="10px">
-          <span style="font-weight:bold">Pre-Order
-        </mj-button>
-      </mj-column>
-    </mj-section>
-    <!-- DEAL OF THE DAY SECTION END -->
 
     <!-- CLEARANCE SECTION  -->
     <mj-section background-color="#ffffff" text-align="center">
-      <mj-column>
-        <mj-image align="center" src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/GL-37504-pol-outlet-190823-98410.png" target="_blank" width="1200px"></mj-image>
-        <mj-text align="center" font-weight="bold">
-          Clearance, open-box and more.
-        </mj-text>
-        <mj-button width="100%" background-color="#FFED31" color="#1C252C" border-radius="10px">
-          <span style="font-weight:bold">Shop Now
-        </mj-button>
-      </mj-column>
+      <mj-group>
+        <mj-column>
+          <mj-image align="center" src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/GL-37504-pol-outlet-190823-98410.png" target="_blank" width="1200px"></mj-image>
+          <mj-text align="center" font-weight="bold">
+            Clearance, open-box and more.
+          </mj-text>
+          <mj-button background-color="#FFED31" color="#1C252C">
+            <span style="font-weight:bold">Shop Now
+          </mj-button>
+        </mj-column>
+      </mj-group>
+      <mj-group>
+        <mj-column>
+          <mj-image align="center" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol-MMT-582419-220829_DER-ba83c8f4-d688-4f2b-8d99-145cd6f057db.jpg" target="_blank" width="1200px"></mj-image>
+          <mj-text align="center" font-weight="bold">
+            Save up to $60 on select Canon printers.*
+          </mj-text>
+          <mj-button background-color="#FFED31" color="#1C252C">
+            <span style="font-weight:bold">Shop Now
+          </mj-button>
+        </mj-column>
+      </mj-group>
     </mj-section>
     <!-- CLEARANCE SECTION END -->
 
-    <!-- PRINTER SECTION  -->
-    <mj-section background-color="#ffffff" text-align="center">
-      <mj-column>
-        <mj-image align="center" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol-MMT-582419-220829_DER-ba83c8f4-d688-4f2b-8d99-145cd6f057db.jpg" target="_blank" width="1200px"></mj-image>
-        <mj-text align="center" font-weight="bold">
-          Save up to $60 on select Canon printers.*
-        </mj-text>
-        <mj-button width="100%" background-color="#FFED31" color="#1C252C" border-radius="10px">
-          <span style="font-weight:bold">Shop Now
-        </mj-button>
-      </mj-column>
-    </mj-section>
-    <!-- PRINTER SECTION END -->
-
     <!-- SKIP THE LINE SECTION  -->
-    <mj-section background-color="#ffffff" text-align="center">
+    <mj-section padding="0" background-color="#ffffff" text-align="center">
       <mj-column>
-        <mj-image align="center" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/MOBILEAPP_DEALS_ENGAGE_VPED2_Large_Image_DER-6a6dff43-44f3-4231-b62d-474d841dcea6.jpg" target="_blank" width="1200px"></mj-image>
-        <mj-button width="100%" background-color="#FFED31" color="#1C252C" border-radius="10px">
-          <span style="font-weight:bold">Learn More
-        </mj-button>
+        <mj-image padding-top="0" padding-left="0" padding-right="0" align="center" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/MOBILEAPP_DEALS_ENGAGE_VPED2_Large_Image_DER-6a6dff43-44f3-4231-b62d-474d841dcea6.jpg"></mj-image>
       </mj-column>
     </mj-section>
     <!-- SKIP THE LINE SECTION END -->
 
     <!-- AUTHORIZED APPLE SECTION  -->
-    <mj-section background-color="#ffffff" text-align="center">
+    <mj-section padding="0" background-color="#ffffff" text-align="center">
       <mj-column>
-        <mj-image align="center" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-75264-phone-repair-bnr-3bca797d-3787-4c8c-b8a5-97bf7d0d0722.jpg" target="_blank" width="1200px"></mj-image>
+        <mj-image padding-left="0" padding-right="0" align="center" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-75264-phone-repair-bnr-3bca797d-3787-4c8c-b8a5-97bf7d0d0722.jpg" target="_blank" width="1200px"></mj-image>
       </mj-column>
     </mj-section>
     <!-- AUTHORIZED APPLE SECTION END -->
 
-    <!-- MOST VIEWED SECTION  -->
-    <mj-section background-color="#ffffff">
-      <mj-column>
-        <mj-image align="center" src="https://d3ny89hlzoqbvb.cloudfront.net/7431/feed_1955702816_1184523502-05_28_00_45dc2c_77473.jpg" target="_blank" width="600px"></mj-image>
-      </mj-column>
-    </mj-section>
-    <!-- MOST VIEWED SECTION END -->
-
-    <!-- AIRPODS AND IPHONE SECTION  -->
-    <mj-wrapper>
-      <mj-section background-color="#ffffff">
-        <mj-group>
-          <mj-column>
-            <mj-image src="https://d3ny89hlzoqbvb.cloudfront.net/7431/feed_1275659400_1184523502-16_33_53_2d02f6_77396.jpg">
-          </mj-column>
-          <mj-column>
-            <mj-image src="https://d3ny89hlzoqbvb.cloudfront.net/7431/feed_1275659400_1184523502-16_33_21_99abe4_21041.jpg">
-          </mj-column>
-        </mj-group>
-      </mj-section>
-    </mj-wrapper>
-    <!-- AIRPODS AND IPHONE SECTION END -->
-
-    <!-- IPAD & DESKTOP SECTION  -->
-    <mj-wrapper>
-      <mj-section background-color="#ffffff">
-        <mj-group>
-          <mj-column>
-            <mj-image src="https://d3ny89hlzoqbvb.cloudfront.net/7431/feed_1275659400_1184523502-16_44_07_b9801a_27806.jpg">
-          </mj-column>
-          <mj-column>
-            <mj-image src="https://d3ny89hlzoqbvb.cloudfront.net/7431/feed_1275659400_1184523502-18_28_34_71a6ae_52532.jpg">
-          </mj-column>
-        </mj-group>
-      </mj-section>
-    </mj-wrapper>
-    <!-- IPAD & DESKTOP SECTION END -->
-
     <!-- TV | PCS | CELL PHONES | APPLIANCES | SMALL APPLIACNES | SMART HOME SECTION  -->
-    <mj-section background-color="#ffffff">
-      <mj-column>
-        <mj-text>
-          <hr>
+    <mj-section padding-top="0" padding-bottom="0" background-color="#ffffff">
+      <mj-group>
+        <mj-column>
+        <mj-text css-class="underline clickable">
+          
         </mj-text>
-        <mj-text align="center" color="#0A4ABF" font-weight="bold" font-size="15px">
-          <span style="font-size:15px;">TVs</span>
+          <mj-text css-class="underline clickable" padding="15px" align="center" color="#0A4ABF" font-size="15px"><strong>TVs</strong></mj-text>
+          <mj-text css-class="underline clickable" padding="15px" align="center" color="#0A4ABF" font-size="15px" ><strong>Cell Phones</strong></mj-text>
+           <mj-text css-class="clickable" padding="15px" align="center" color="#0A4ABF" font-size="15px" ><strong>Small Appliances</strong></mj-text>
+        </mj-column>
+        <mj-column>
+        <mj-text css-class="underline clickable">
+          
         </mj-text>
-        <mj-text>
-          <hr>
-        </mj-text>
-        <mj-text align="center" color="#0A4ABF" font-weight="bold" font-size="15px">
-          <span style="font-size:215x;">Computers</span>
-        </mj-text>
-        <mj-text>
-          <hr>
-        </mj-text>
-        <mj-text align="center" color="#0A4ABF" font-weight="bold" font-size="15px">
-          <span style="font-size:15px;">Cell Phones</span>
-        </mj-text>
-        <mj-text>
-          <hr>
-        </mj-text>
-        <mj-text align="center" color="#0A4ABF" font-weight="bold" font-size="15px">
-          <span style="font-size:15px;">Appliances</span>
-        </mj-text>
-        <mj-text>
-          <hr>
-        </mj-text>
-        <mj-text align="center" color="#0A4ABF" font-weight="bold" font-size="15px">
-          <span style="font-size:15px;">Small Appliances</span>
-        </mj-text>
-        <mj-text>
-          <hr>
-        </mj-text>
-        <mj-text align="center" color="#0A4ABF" font-weight="bold" font-size="15px">
-          <span style="font-size:15px;">Smart Home</span>
-        </mj-text>
-        </mj-coulumn>
+          <mj-text css-class="underline clickable" padding="15px" align="center" font-size="15px" color="#0A4ABF"><strong>Computers</strong></mj-text>
+           <mj-text css-class="underline clickable" padding="15px" align="center" font-size="15px" color="#0A4ABF"><strong>Appliances</strong></mj-text>
+            <mj-text css-class="clickable" padding="15px" align="center" font-size="15px" color="#0A4ABF"><strong>Smart Home</strong></mj-text>
+        </mj-column>
+      </mj-group>
     </mj-section>
     <!-- TV | PCS | CELL PHONES | APPLIANCES | SMALL APPLIACNES | SMART HOME SECTION END -->
 
     <!-- SOCIAL MEDIA ICONS SECTION  -->
-    <mj-section background-color="#0A4ABF" padding-top="45px">
-      <mj-column css-class="best_buy_section">
-        <mj-text color="white" font-weight="bold">
-          <p style="font-size:15px;">Deal of the Day <span style="float:right;">Mobile app</span></p>
-        </mj-text>
-        <mj-text>
-          <hr>
-        </mj-text>
-        <mj-text color="white" font-weight="bold">
-          <p style="font-size:15px;">Credit Cards <span style="float:right;">Support Center</span></p>
-        </mj-text>
-        <mj-text>
-          <hr>
-        </mj-text>
-        <mj-text color="white" font-weight="bold" align="center">
-          <p style="font-size:20px; margin:0px; padding-bottom:5px;">Follow us and share your story! </p>
-        </mj-text>
-      </mj-column>
-    </mj-section>
-    <mj-section background-color="#0A4ABF">
-      <mj-group>
-        <mj-column css-class="social_icons">
-          <mj-image width="30px" src="http://image.emailinfo2.bestbuy.com/lib/fef31d77766c05/m/6/icon-social-fb.gif"></mj-image>
+    <mj-section background-color="#0A4ABF" padding-bottom="0" padding-top="0">
+     <mj-group>
+        <mj-column>
+          <mj-text css-class="underline2 clickable" padding="15px" align="center" color="#ffffff" font-size="15px" ><span style=""><strong>Deal of the Day</strong></span></mj-text>
+          <mj-text css-class="underline2 clickable" padding="15px" align="center" color="#ffffff" font-size="15px" ><strong>Credit Cards</strong></mj-text>
         </mj-column>
-        <mj-column css-class="social_icons">
-          <mj-image width="30px" src="http://image.emailinfo2.bestbuy.com/lib/fef31d77766c05/m/6/icon-social-tw.gif"></mj-image>
-        </mj-column>
-        <mj-column css-class="social_icons">
-          <mj-image width="30px" src="http://image.emailinfo2.bestbuy.com/lib/fef31d77766c05/m/6/icon-social-ig.gif"></mj-image>
-        </mj-column>
-        <mj-column css-class="social_icons">
-          <mj-image width="30px" src="http://image.emailinfo2.bestbuy.com/lib/fef31d77766c05/m/6/icon-social-pi.gif"></mj-image>
-        </mj-column>
-        <mj-column css-class="social_icons">
-          <mj-image width="30px" src="http://image.emailinfo2.bestbuy.com/lib/fef31d77766c05/m/6/icon-social-in.gif"></mj-image>
+        <mj-column>
+          <mj-text css-class="underline2 clickable" padding="15px" align="center" font-size="15px" color="#ffffff"><strong>Mobile App</strong></mj-text>
+           <mj-text css-class="underline2 clickable" padding="15px" align="center" font-size="15px" color="#ffffff"><strong>Support Center</strong></mj-text>
         </mj-column>
       </mj-group>
+    </mj-section>
+    <mj-section padding-top="0" padding-bottom="0" background-color="#0A4ABF">
+        <mj-column>
+        <mj-text css-class="clickable" align="center" padding-bottom="0" align="center" color="#ffffff" font-size="15px" ><strong>Follow us and share your story</strong></mj-text>
+          <mj-social css-class="clickable" align="center">
+          <mj-social-element background-color="#0A4ABF" name="facebook"></mj-social-element>
+          <mj-social-element background-color="#0A4ABF" name="twitter"></mj-social-element>
+          <mj-social-element background-color="#0A4ABF" name="instagram"></mj-social-element>
+           <mj-social-element background-color="#0A4ABF" name="pinterest"></mj-social-element>
+            <mj-social-element background-color="#0A4ABF" name="linkedin"></mj-social-element>
+        </mj-social>
+        </mj-column>
     </mj-section>
     <!-- SOCIAL MEDIA ICONS SECTION END -->
 
     <!-- GOOGLE MAPS SECTION  -->
-    <mj-section background-color="#ffffff">
+    <mj-section padding-bottom="0" padding-top="0"  background-color="#ffffff">
+    <mj-group>
       <mj-column>
-        <mj-image align="center" src="https://drgfpqxf0lj8j.cloudfront.net/7431/map-id-542471016-v-1140623774-s-46dbec18d025.jpg" target="_blank" width="600px"></mj-image>
+        <mj-image padding="5px" align="center" src="https://drgfpqxf0lj8j.cloudfront.net/7431/map-id-654026563-v-1140623774-s-68ec8315e21f.jpg" target="_blank" width="600px"></mj-image>
       </mj-column>
-    </mj-section>
-    <mj-section background-color="#ffffff">
+      </mj-group>
+      <mj-group>
       <mj-column>
-        <mj-image align="center" src="https://drgfpqxf0lj8j.cloudfront.net/7431/map-id-542469120-v-2044321494-s-201b21a486a1.jpg" target="_blank" width="600px"></mj-image>
+        <mj-image padding-bottom="5px" align="center" src="https://drgfpqxf0lj8j.cloudfront.net/7431/map-id-542469120-v-2044321494-s-201b21a486a1.jpg" target="_blank" width="600px"></mj-image>
       </mj-column>
+      </mj-group>
     </mj-section>
     <!-- GOOGLE MAPS SECTION END -->
 
